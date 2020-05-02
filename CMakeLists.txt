@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.13.0)
+enable_testing()
+project(9cc C)
+add_executable(9cc 9cc.c)
+add_test(NAME test COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/test.sh)
